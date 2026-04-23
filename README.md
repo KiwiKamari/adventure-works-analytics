@@ -1,5 +1,5 @@
 # adventure-works-analytics
-This project draws heavily on my experience in data analysis. It covers everything from client reports to product sales using the public database Adventure Works.
+This project draws heavily on my experience in data analysis. It covers everything from client reports to product sales using the public database [Adventure Works 2022](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak).
 
 
 ### 🗃️  Personal Projects
