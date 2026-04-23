@@ -1,7 +1,7 @@
 /* 
-TITLE: InformaciÛn personal de los clientes
+TITLE: Informaci√≥n personal de los clientes
 DESCRIPTION: 
-Nombre completo, ID, residencia y datos demogr·ficos.
+Nombre completo, ID, residencia y datos demogr√°ficos.
 DATE: 05/03/2026
 */
 
@@ -38,8 +38,8 @@ cte_CustomerSales AS (
 	GROUP BY CustomerID
 )
 
-SELECT DISTINCT
-	s.CustomerID,
+SELECT 
+	DISTINCT s.CustomerID,
 	CONCAT_WS(' ', p.FirstName, p.MiddleName, p.LastName, p.Suffix) AS FullName,
 	a.AddressLine1 AS AddressLine,
 	a.City,
