@@ -10,6 +10,7 @@ Feel free to connect with me on the following platforms:
 
 Check out my personal projects!
 - ✅ **sql-data-analytics-project-main:** [GIT Repo](https://github.com/KiwiKamari/sql-data-analytics-project-main)
+- ✅ **user_analytics:** [GIT Repo](https://github.com/KiwiKamari/user_analytics)
 
 
 ### 🌟 About Me
