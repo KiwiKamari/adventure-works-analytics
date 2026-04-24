@@ -1,1 +1,3 @@
-*.sql linguist-language=SQL
+*.sql linguist-language=SQL,
+README.md linguist-documentation
+
