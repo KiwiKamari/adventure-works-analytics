@@ -5,7 +5,6 @@ This project analyzes the [Adventure Works 2022](https://github.com/Microsoft/sq
 
 The solution is built using advanced T-SQL queries on MSSQL and later integrated into Power BI for visualization and decision-making.
 
----
 
 ## Key SQL Implementations
 
