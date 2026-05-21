@@ -57,7 +57,7 @@ Sales were classified and analyzed based on transaction channel:
 * Identifies customer channel preferences
 
 
-<img width="939" height="527" alt="imagen" src="https://github.com/user-attachments/assets/d2eebb1d-c43a-41e9-89ca-aff80597e97b" />
+<img width="65%" height="65%" alt="imagen" src="https://github.com/user-attachments/assets/d2eebb1d-c43a-41e9-89ca-aff80597e97b" />
 
 ---
 
