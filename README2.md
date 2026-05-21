@@ -98,7 +98,7 @@ Developed a B2B-focused RFM segmentation model to analyze customer value, engage
 - Customer Segment
 - Revenue Contribution
 - Pareto Distribution
-- 
+  
 **Technical Approach**
 
 - Built a dedicated B2B analytical model using:
