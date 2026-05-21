@@ -3,7 +3,7 @@
 
 This project analyzes the [Adventure Works 2022](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak) transactional database to extract business insights related to product profitability, customer behavior, and sales performance over time.
 
-The solution is built using advanced T-SQL queries on MSSQL and later integrated into Power BI for visualization and decision-making.
+The solution is built using advanced T-SQL queries on MSSQL and later integrated into Power BI for visualization and decision-making [SalesDashBoard.pbix](https://raw.githubusercontent.com/KiwiKamari/adventure-works-analytics/refs/heads/main/SalesDashboard.pbix).
 
 
 ## Key SQL Implementations
