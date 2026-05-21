@@ -58,7 +58,7 @@ Sales were classified and analyzed based on transaction channel:
 
 <p align="center">
   <img width="65%" height="65%" alt="imagen" src="https://github.com/user-attachments/assets/d2eebb1d-c43a-41e9-89ca-aff80597e97b" />
-  <br>"Customer B2B Segmentation & RFM"<br>
+  <br>"Customer B2B Segmentation & RFM"<br><br>
 
   <img width="65%" height="65%" alt="imagen" src="https://github.com/user-attachments/assets/7da0186e-af5e-4fea-8e22-ba1e664f8983" />
   <br>"Customer B2B Segmentation & RFM"
