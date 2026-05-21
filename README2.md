@@ -39,6 +39,7 @@ Developed a product-level profitability model combining transactional sales data
 
 
 
+---
 ### 2. Sales Channel Analysis (Online vs Offline)
 
 Developed a customer-level sales channel analysis model to compare purchasing behavior between online and offline transactions.
@@ -83,6 +84,7 @@ Developed a customer-level sales channel analysis model to compare purchasing be
 
 
 
+---
 ### 3. Customer B2B Segmentation & RFM Analysis
 
 Developed a B2B-focused RFM segmentation model to analyze customer value, engagement, and revenue concentration across business accounts.
@@ -148,6 +150,7 @@ Implemented a Pareto revenue model to identify the concentration of revenue amon
 
 
 
+---
 ### 4. Customer B2C Segmentation & RFM Analysis
 
 Developed a B2C-focused RFM segmentation model to analyze consumer purchasing behavior, loyalty, and revenue contribution.
@@ -215,6 +218,7 @@ Implemented a Pareto revenue distribution model to identify revenue concentratio
 
 
 
+---
 ### 5. Customer B2B Firmographics & Value Profitability
 
 Developed an enriched B2B analytical dataset combining transactional performance, firmographic attributes, and customer value metrics.
@@ -268,6 +272,7 @@ Developed an enriched B2B analytical dataset combining transactional performance
 
 
 
+---
 ### 6. Customer B2C Demographics & Value Profitability
 
 Developed an enriched B2C analytical dataset combining transactional performance, demographic attributes, and customer value metrics.
@@ -324,6 +329,7 @@ Developed an enriched B2C analytical dataset combining transactional performance
 
 
 
+---
 ### 7. Time Series Analysis
 
 Developed a time-series revenue model to analyze sales performance, growth trends, and seasonality over time.
