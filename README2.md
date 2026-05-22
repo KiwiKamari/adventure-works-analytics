@@ -1,3 +1,70 @@
+# Dataset
+
+This project uses the AdventureWorks2022 sample database from Microsoft, a simulated enterprise dataset designed for business intelligence and analytical scenarios.
+
+## Main Data Domains
+
+The analysis combines data from multiple business areas, including:
+
+- Sales
+- Customers
+- Products
+- Production Costs
+- Stores
+- Customer Demographics
+- Geographic Information
+
+## Core Tables Used
+
+### Sales
+- `Sales.SalesOrderHeader`
+- `Sales.SalesOrderDetail`
+- `Sales.Customer`
+
+### Products & Production
+- `Production.Product`
+- `Production.ProductSubcategory`
+- `Production.ProductCategory`
+- `Production.ProductCostHistory`
+
+### Customer & Demographics
+- `Person.Person`
+- `Sales.Store`
+- `Sales.vPersonDemographics`
+- `Sales.vStoreWithDemographics`
+- `Sales.vStoreWithAddresses`
+
+### Geography & Addresses
+- `Person.Address`
+- `Person.BusinessEntityAddress`
+- `Person.vStateProvinceCountryRegion`
+
+## Dataset Scope
+
+The project focuses on:
+
+- Product profitability analysis
+- Customer segmentation (B2B & B2C)
+- Sales channel analysis
+- Revenue trend analysis
+- Customer demographic and firmographic profiling
+- Pareto revenue distribution analysis
+
+## Data Modeling Approach
+
+The analytical layer was built using SQL views designed for Power BI integration.
+
+Key modeling practices included:
+
+- Aggregated analytical datasets
+- Historical cost matching
+- Customer-level enrichment
+- Time-series normalization
+- RFM segmentation models
+- Avoidance of duplicated transactional granularity
+
+# SQL Implementations
+
 ### 1. Product Profitability & Cost Analysis
 
 Developed a product-level profitability model combining transactional sales data, historical production costs, and product categorization to evaluate financial performance over time.
