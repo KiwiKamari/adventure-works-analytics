@@ -1007,7 +1007,11 @@ Conditional formatting was applied to revenue-related metrics to improve compara
 
 <p align="center">
   <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/0a911299-94c5-4176-9fd7-6c7414c9dded" />
-  <br>"Product Profitability & Cost Analysis"<br><br>
+  <br>
+  <a href="##product-profitability-&-cost-analysis">
+  "Product Profitability & Cost Analysis"
+  </a>
+  <br><br>
   
   <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/524a18cf-a1f4-436d-9e21-9f97b27457a3" />
   <br>"Sales Channel Analysis (Online vs Offline)"<br><br>
@@ -1025,13 +1029,129 @@ Conditional formatting was applied to revenue-related metrics to improve compara
   <br>"Customer B2C Demographics & Value Profitability"<br><br>
   
   <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/7036e5d1-37c6-45d0-8e27-aebfa8183a40" />
-  <br>"Time Series Analysis"
+  <br>"Time Series Analysis"<br><br>
 </p>
 
-### Dashboard Preview
-[View Product Profitability Dashboard](#product-profitability-&-cost-analysis)
 
-![Dashboard Screenshot](PowerBI_Pages/product_details.png)
+# Dashboards Preview
+
+<p align="center">
+
+  <a href="https://github.com/user-attachments/assets/0a911299-94c5-4176-9fd7-6c7414c9dded">
+    <img width="55%" height="55%" alt="Product Profitability Dashboard"
+    src="https://github.com/user-attachments/assets/0a911299-94c5-4176-9fd7-6c7414c9dded" />
+  </a>
+
+  <br>
+
+  <a href="#product-profitability--cost-analysis">
+    Product Profitability & Cost Analysis
+  </a>
+
+</p>
+
+---
+
+<p align="center">
+
+  <a href="https://github.com/user-attachments/assets/524a18cf-a1f4-436d-9e21-9f97b27457a3">
+    <img width="55%" height="55%" alt="Sales Channel Dashboard"
+    src="https://github.com/user-attachments/assets/524a18cf-a1f4-436d-9e21-9f97b27457a3" />
+  </a>
+
+  <br>
+
+  <a href="#sales-channel-analysis-online-vs-offline">
+    Sales Channel Analysis (Online vs Offline)
+  </a>
+
+</p>
+
+---
+
+<p align="center">
+
+  <a href="https://github.com/user-attachments/assets/9e0338d5-8a05-4e5d-9e07-79010eee138f">
+    <img width="55%" height="55%" alt="B2B RFM Dashboard"
+    src="https://github.com/user-attachments/assets/9e0338d5-8a05-4e5d-9e07-79010eee138f" />
+  </a>
+
+  <br>
+
+  <a href="#customer-b2b-segmentation--rfm">
+    Customer B2B Segmentation & RFM
+  </a>
+
+</p>
+
+---
+
+<p align="center">
+
+  <a href="https://github.com/user-attachments/assets/9807db50-6b7a-4634-93f5-08295d108a2e">
+    <img width="55%" height="55%" alt="B2C RFM Dashboard"
+    src="https://github.com/user-attachments/assets/9807db50-6b7a-4634-93f5-08295d108a2e" />
+  </a>
+
+  <br>
+
+  <a href="#customer-b2c-segmentation--rfm">
+    Customer B2C Segmentation & RFM
+  </a>
+
+</p>
+
+---
+
+<p align="center">
+
+  <a href="https://github.com/user-attachments/assets/f4e600fe-4101-41e2-b2cb-867999077340">
+    <img width="55%" height="55%" alt="B2B Firmographics Dashboard"
+    src="https://github.com/user-attachments/assets/f4e600fe-4101-41e2-b2cb-867999077340" />
+  </a>
+
+  <br>
+
+  <a href="#customer-b2b-firmographics--value-profitability">
+    Customer B2B Firmographics & Value Profitability
+  </a>
+
+</p>
+
+---
+
+<p align="center">
+
+  <a href="https://github.com/user-attachments/assets/ca50c562-4519-4e37-94a0-d6f667816eaf">
+    <img width="55%" height="55%" alt="B2C Demographics Dashboard"
+    src="https://github.com/user-attachments/assets/ca50c562-4519-4e37-94a0-d6f667816eaf" />
+  </a>
+
+  <br>
+
+  <a href="#customer-b2c-demographics--value-profitability">
+    Customer B2C Demographics & Value Profitability
+  </a>
+
+</p>
+
+---
+
+<p align="center">
+
+  <a href="https://github.com/user-attachments/assets/7036e5d1-37c6-45d0-8e27-aebfa8183a40">
+    <img width="55%" height="55%" alt="Time Series Dashboard"
+    src="https://github.com/user-attachments/assets/7036e5d1-37c6-45d0-8e27-aebfa8183a40" />
+  </a>
+
+  <br>
+
+  <a href="#time-series-analysis">
+    Time Series Analysis
+  </a>
+
+</p>
+
 
 
 
