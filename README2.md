@@ -433,3 +433,613 @@ Developed a time-series revenue model to analyze sales performance, growth trend
 - Detects seasonality patterns and performance fluctuations
 - Enables monthly and yearly performance tracking
 - Supports strategic forecasting and trend analysis
+
+
+
+# Power BI Integration
+
+## Product Profitability & Cost Analysis
+
+This dashboard page focuses on product-level profitability analysis by combining revenue, historical costs, margins, pricing, and product hierarchy dimensions into a single analytical view.
+
+### Main Objectives
+
+* Evaluate product profitability across categories and subcategories
+* Compare revenue against historical production costs
+* Identify high-profit and high-margin products
+* Analyze pricing behavior and margin distribution
+* Support drill-down analysis from category to product level
+
+### Dashboard Components
+
+#### KPI Cards
+
+The top section contains executive KPI cards used to summarize overall product performance:
+
+* Total Revenue
+* Total Cost
+* Total Profit
+* Profit Margin %
+
+These KPIs dynamically respond to all report filters.
+
+### Filtering & Navigation
+
+Interactive slicers were implemented to support multidimensional analysis:
+
+* Year
+* Month
+* Category
+* Subcategory
+* Product Name
+* Actual Price Range
+
+This filtering structure enables hierarchical product exploration and temporal profitability analysis.
+
+### Visual Analytics
+
+#### Revenue vs Total Cost
+
+Clustered bar chart used to compare:
+
+* Revenue
+* Total Cost
+
+across product categories.
+
+Purpose:
+
+* Evaluate profitability at category level
+* Compare operational cost structure against generated revenue
+* Detect high-volume vs low-margin categories
+
+---
+
+#### Price vs Margin %
+
+Scatter plot used to analyze the relationship between:
+
+* Product price
+* Profit margin %
+
+Bubble distribution allows comparative analysis across product categories.
+
+Purpose:
+
+* Detect pricing efficiency
+* Identify premium vs low-margin products
+* Analyze margin dispersion by pricing segment
+
+---
+
+#### Margin % by Subcategory
+
+Treemap visualization used to represent profit margin contribution by subcategory.
+
+Purpose:
+
+* Analyze margin distribution across product hierarchy
+* Identify subcategories with stronger profitability contribution
+* Improve comparative visualization of categorical performance
+
+---
+
+#### Top 10 Products by Profit
+
+Horizontal bar chart ranking the most profitable products.
+
+Purpose:
+
+* Identify products generating the highest profit
+* Compare product-level contribution to total profitability
+* Highlight top-performing SKUs
+
+---
+
+#### Products Detail Matrix
+
+Hierarchical matrix displaying:
+
+* Category
+* Revenue
+* Total Cost
+* Profit
+* Margin %
+
+Purpose:
+
+* Provide detailed analytical breakdown
+* Support drill-down exploration
+* Validate aggregated KPI metrics
+* Enable direct comparison between categories and products
+
+Conditional formatting was applied to Margin % to improve visual interpretation of profitability levels.
+
+---
+
+## Sales Channel Analysis (Online vs Offline)
+
+This dashboard page analyzes customer purchasing behavior across sales channels by comparing Online and Offline transactions through revenue, order activity, customer participation, and Average Order Value (AOV).
+
+### Main Objectives
+
+* Compare Online vs Offline sales performance
+* Analyze customer purchasing behavior by channel
+* Evaluate revenue contribution across channels
+* Measure AOV differences between Online and Offline transactions
+* Identify customer concentration by channel
+
+### Dashboard Components
+
+#### KPI Cards
+
+The top section contains executive KPIs used to summarize channel performance:
+
+* Total Revenue
+* Average AOV
+* Total Orders
+* Total Customers
+
+All KPIs dynamically respond to channel and year filters.
+
+### Filtering & Navigation
+
+Interactive slicers were implemented for channel-based analysis:
+
+* Channel
+* Year
+
+These filters allow direct comparison between Online and Offline purchasing behavior over time.
+
+### Visual Analytics
+
+#### Orders YoY by Channel
+
+Heatmap-style matrix displaying yearly order distribution across sales channels.
+
+Purpose:
+
+* Analyze order activity by year
+* Compare transaction volume between channels
+* Detect growth concentration across periods
+
+Conditional formatting was applied to improve year-over-year comparison visibility.
+
+---
+
+#### Online vs Offline Sales by Year
+
+Clustered column chart comparing total sales across channels by year.
+
+Purpose:
+
+* Compare annual revenue contribution by channel
+* Evaluate sales growth trends
+* Identify channel dominance over time
+
+---
+
+#### Top 20 Clients by Channel
+
+Detailed ranking table displaying:
+
+* Customer ID
+* Customer Name
+* Sales Channel
+* Revenue
+* Channel AOV
+
+Purpose:
+
+* Identify highest-value customers by channel
+* Compare customer spending behavior
+* Analyze customer concentration within each channel
+
+---
+
+#### AOV by Channel and Year
+
+Area chart used to compare Average Order Value trends between Online and Offline channels across multiple years.
+
+Purpose:
+
+* Evaluate purchasing behavior differences
+* Compare transaction size evolution over time
+* Analyze channel purchasing efficiency
+
+---
+
+#### Participation by Channel
+
+Donut chart representing total revenue participation by sales channel.
+
+Purpose:
+
+* Visualize revenue share distribution
+* Compare overall contribution between Online and Offline sales
+* Provide high-level channel participation overview
+
+---
+
+
+## Customer B2B Segmentation & RFM
+
+This dashboard page focuses on B2B customer segmentation using an RFM analytical model combined with Pareto analysis to evaluate customer value concentration, purchasing behavior, and revenue contribution.
+
+### Main Objectives
+
+* Segment B2B customers based on purchasing behavior
+* Analyze Recency, Frequency, and Monetary patterns
+* Identify high-value and at-risk business customers
+* Evaluate revenue concentration through Pareto analysis
+* Compare customer segments using operational and financial metrics
+
+### Dashboard Components
+
+#### KPI Cards
+
+The top section contains executive RFM KPIs:
+
+* Average Recency
+* Average Frequency
+* Average Monetary
+* Total Customers
+
+These KPIs dynamically update according to all segment and demographic filters.
+
+### Filtering & Navigation
+
+Interactive slicers were implemented for multidimensional customer analysis:
+
+* Segment
+* Store Type
+* Country
+
+These filters support comparative analysis across B2B customer groups and geographic regions.
+
+### Visual Analytics
+
+#### Customers Distribution by Segment
+
+Donut chart representing customer distribution across RFM segments.
+
+Purpose:
+
+* Visualize customer concentration by segment
+* Compare relative segment sizes
+* Evaluate customer population structure
+
+---
+
+#### Simplified RFM
+
+Bubble scatter chart representing segment behavior using:
+
+* Average Recency
+* Average Frequency
+* Segment grouping
+
+Purpose:
+
+* Simplify multidimensional RFM analysis
+* Compare behavioral positioning between segments
+* Identify customer activity and engagement patterns
+
+Bubble size is used to improve comparative segment visibility.
+
+---
+
+#### Customers B2B who account for 80% of revenue
+
+Pareto KPI section displaying:
+
+* Count of customers responsible for 80% of revenue
+* Percentage of total customers represented by that group
+
+Purpose:
+
+* Evaluate revenue concentration
+* Identify strategic customer dependency
+* Support Pareto-based business analysis
+
+---
+
+#### Average of AOV by Segment
+
+Column chart comparing Average Order Value across customer segments.
+
+Purpose:
+
+* Analyze spending behavior by segment
+* Compare purchasing value between customer groups
+* Identify segments with stronger transactional value
+
+---
+
+#### Revenue & Pareto by Segment
+
+Combined Pareto visualization integrating:
+
+* Revenue by segment
+* Cumulative Pareto percentage
+
+Purpose:
+
+* Evaluate revenue contribution by customer segment
+* Identify segments driving business revenue concentration
+* Analyze cumulative revenue distribution
+
+The visual combines categorical revenue analysis with cumulative Pareto progression to improve strategic customer evaluation.
+
+---
+
+
+## Customer B2C Segmentation & RFM
+
+This dashboard page focuses on B2C customer segmentation using an RFM analytical model combined with Pareto analysis to evaluate consumer purchasing behavior, loyalty patterns, and revenue concentration.
+
+### Main Objectives
+
+* Segment B2C customers based on purchasing behavior
+* Analyze Recency, Frequency, and Monetary patterns
+* Identify loyal, promising, and at-risk consumers
+* Evaluate revenue concentration through Pareto analysis
+* Compare customer segments using behavioral and financial metrics
+
+### Dashboard Components
+
+#### KPI Cards
+
+The top section contains executive RFM KPIs:
+
+* Average Recency
+* Average Frequency
+* Average Monetary
+* Total Customers
+
+These KPIs dynamically respond to all segment and demographic filters.
+
+### Filtering & Navigation
+
+Interactive slicers were implemented for customer segmentation analysis:
+
+* Segment
+* Marital Status
+* Gender
+
+These filters support demographic and behavioral comparison across customer groups.
+
+### Visual Analytics
+
+#### Customers Distribution by Segment
+
+Donut chart representing customer distribution across RFM segments.
+
+Purpose:
+
+* Visualize customer concentration by segment
+* Compare relative segment sizes
+* Evaluate customer population structure
+
+---
+
+#### Simplified RFM
+
+Bubble scatter chart representing customer segment behavior using:
+
+* Average Recency
+* Average Frequency
+* Segment grouping
+
+Purpose:
+
+* Simplify multidimensional RFM analysis
+* Compare engagement and purchasing activity across segments
+* Identify active, loyal, and inactive customer groups
+
+Bubble size improves comparative visualization between segment clusters.
+
+---
+
+#### Customers B2C who account for 80% of revenue
+
+Pareto KPI section displaying:
+
+* Count of customers responsible for 80% of revenue
+* Percentage of total customers represented by that group
+
+Purpose:
+
+* Evaluate revenue concentration
+* Identify high-impact customer groups
+* Support Pareto-based customer analysis
+
+---
+
+#### Average of AOV by Segment
+
+Column chart comparing Average Order Value across customer segments.
+
+Purpose:
+
+* Compare consumer purchasing value between segments
+* Analyze spending behavior patterns
+* Identify segments with stronger transactional contribution
+
+---
+
+#### Revenue & Pareto by Segment
+
+Combined Pareto visualization integrating:
+
+* Revenue by segment
+* Cumulative Pareto percentage
+
+Purpose:
+
+* Evaluate revenue contribution by customer segment
+* Analyze cumulative customer value concentration
+* Identify segments driving overall business revenue
+
+The visualization combines categorical revenue comparison with Pareto progression analysis for improved customer value evaluation.
+
+---
+
+
+## Customer B2B Firmographics & Value Profitability
+
+This dashboard page focuses on B2B customer profiling by combining firmographic information, customer value metrics, geographic distribution, and purchasing behavior into a unified analytical view.
+
+### Main Objectives
+
+* Analyze B2B customer value and profitability
+* Evaluate business customers using firmographic attributes
+* Compare revenue contribution across industries and store types
+* Analyze customer distribution by geography
+* Identify high-value business customer groups
+
+### Dashboard Components
+
+#### KPI Cards
+
+The top section contains executive customer profitability KPIs:
+
+* Total Revenue
+* Average Order Value
+* Average Customer Tenure
+* Total Customers
+
+These KPIs dynamically respond to all firmographic and geographic filters.
+
+### Filtering & Navigation
+
+Interactive slicers were implemented for business customer analysis:
+
+* Store Type
+* Occupation
+* Country
+
+These filters support multidimensional exploration across business categories and geographic regions.
+
+### Visual Analytics
+
+#### Revenue by Store Type
+
+Donut chart representing revenue distribution across business store categories.
+
+Purpose:
+
+* Compare revenue participation by store type
+* Identify dominant business customer groups
+* Analyze firmographic revenue concentration
+
+---
+
+#### Revenue by Country
+
+Map visualization representing customer revenue distribution geographically.
+
+Purpose:
+
+* Analyze geographic revenue concentration
+* Compare regional customer contribution
+* Identify high-performing business markets
+
+Bubble sizing improves comparative visibility between countries.
+
+---
+
+#### Customer Revenue vs Customer Tenure
+
+Scatter plot comparing:
+
+* Customer tenure
+* Total customer revenue
+
+Purpose:
+
+* Analyze relationship between customer longevity and profitability
+* Detect long-term high-value business customers
+* Identify customer retention patterns
+
+Bubble distribution supports comparative customer-level analysis.
+
+---
+
+#### Revenue by Occupation
+
+Horizontal bar chart ranking revenue contribution across occupational groups.
+
+Purpose:
+
+* Compare revenue generation by occupation category
+* Identify customer groups with stronger purchasing contribution
+* Support demographic-based customer analysis
+
+---
+
+#### B2B Customer Details Matrix
+
+Detailed analytical matrix displaying:
+
+* Customer Name
+* Country
+* Store Type
+* Customer Tenure
+* Total Orders
+* Revenue
+* Average Order Value
+
+Purpose:
+
+* Provide customer-level analytical detail
+* Support drill-down exploration
+* Validate aggregated business metrics
+* Compare profitability and operational behavior across customers
+
+Conditional formatting was applied to revenue-related metrics to improve comparative readability.
+
+---
+
+
+
+# Dashboards Preview
+
+<p align="center">
+  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/0a911299-94c5-4176-9fd7-6c7414c9dded" />
+  <br>"Product Profitability & Cost Analysis"<br><br>
+  
+  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/524a18cf-a1f4-436d-9e21-9f97b27457a3" />
+  <br>"Sales Channel Analysis (Online vs Offline)"<br><br>
+  
+  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/9e0338d5-8a05-4e5d-9e07-79010eee138f" />
+  <br>"Customer B2B Segmentation & RFM"<br><br>
+  
+  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/9807db50-6b7a-4634-93f5-08295d108a2e" />
+  <br>"Customer B2C Segmentation & RFM"<br><br>
+  
+  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/f4e600fe-4101-41e2-b2cb-867999077340" />
+  <br>"Customer B2B Firmographics & Value Profitability"<br><br>
+  
+  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/ca50c562-4519-4e37-94a0-d6f667816eaf" />
+  <br>"Customer B2C Demographics & Value Profitability"<br><br>
+  
+  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/7036e5d1-37c6-45d0-8e27-aebfa8183a40" />
+  <br>"Time Series Analysis"
+</p>
+
+### Dashboard Preview
+[View Product Profitability Dashboard](#product-profitability--cost-analysis)
+
+![Dashboard Screenshot](images/product_profitability.png)
+
+
+
+
+
+
+
+
+
+
+
