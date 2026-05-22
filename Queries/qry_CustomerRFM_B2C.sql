@@ -80,36 +80,6 @@ SELECT
     M_Score,
     RFMScore,
 
-    /*
-      Segmentación por scores individuales.
-      Umbrales calibrados para comportamiento B2C:
-        - Frequency alta = 10-15+ órdenes en el universo B2C
-        - Monetary alta  = top gastadores dentro de consumidores
-      El orden del CASE es deliberado: más específico primero.
-    */
-    /*CASE
-	    WHEN R_Score >= 4 AND F_Score >= 4 AND M_Score >= 4 THEN 'Champions'
-	    WHEN F_Score >= 4 AND M_Score >= 3                  THEN 'Loyal'
-	    WHEN R_Score >= 4 AND F_Score <= 3                  THEN 'Promising'      
-	    WHEN R_Score <= 2 AND M_Score >= 3                  THEN 'At Risk'        
-	    WHEN R_Score <= 2 AND M_Score <= 2                  THEN 'Hibernating'    -- inactivos de bajo valor
-	    WHEN R_Score = 3                                    THEN 'Need Attention'  
-	    ELSE                                                     'Lost'            
-	END AS Segment,*/
-
-	
-	/*CASE
-		WHEN R_Score =  1 AND F_Score =  1 AND M_Score <= 2 THEN 'Lost'				-- Activo que ha generado poco, con nula frecuencia y ultima compra hace mucho tiempo
-		WHEN R_Score =  5 AND F_Score =  1 AND M_Score <= 2 THEN 'New'				-- Nuevos Clientes
-		WHEN R_Score >= 4 AND F_Score >= 4 AND M_Score >= 4 THEN 'VIP'				-- Activo de mucha frecuancia, valor y recencia
-	    WHEN R_Score >= 3 AND F_Score >= 4					THEN 'Loyal'			-- Activo de mucha frecuencia y recencia pero con falta de valor (es leal a la empresa mas su valor es variado)
-	    WHEN R_Score <= 2 AND F_Score >= 2 AND M_Score >= 3 THEN 'At Risk'			-- Activo con mucha frecuencia pero ultima compra hace tiempo (Similar a los leales pero ultima compra hace tiempo)
-		WHEN R_Score >= 4 AND F_Score <= 3					THEN 'Promising'		-- Activo de con compras recientes pero sin muchas ordenes 
-	    WHEN R_Score >= 2								    THEN 'Need Attention'	-- 
-	    --WHEN R_Score <= 2				   AND M_Score <= 4 THEN 'Hibernating'		-- inactivos de bajo valor
-		ELSE 'Hibernating'
-	END AS Segment,*/
-
 	CASE
 		WHEN R_Score =  1 AND F_Score =  1 AND M_Score <= 2 THEN 'Lost'	
 
