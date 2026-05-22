@@ -88,61 +88,6 @@ SELECT
     M_Score,
     RFMScore,
 
-    /*
-      Segmentación B2B con mismos nombres que B2C para facilitar
-      comparación en Power BI, pero umbrales ajustados al contexto:
-
-        Champions     → Empresa reciente, frecuente y de alto valor
-                        En B2B basta F>=3 porque 3-4 órdenes grandes
-                        ya define una relación sólida
-        Loyal         → Alto valor y frecuencia, aunque no tan reciente
-        Promising     → Reciente pero aún con pocas órdenes
-                        (relación nueva, potencial sin desarrollar)
-        At Risk       → Antes valiosos, ahora inactivos
-                        R<=2 = no compra hace tiempo en este universo
-        Need Attention→ Recencia media, una sola transacción
-        Lost          → Sin actividad reciente y sin historial relevante
-        Others        → Casos intermedios (ej: R=2, F=2, M=4)
-    */
-	-- Aplica igual a B2C y B2B, solo cambian los umbrales numéricos
-
-
-    /*-- Mejor cliente posible: reciente, frecuente y monetario alto
-    WHEN R_Score >= 4 AND F_Score >= 3 AND M_Score >= 4 THEN 'Champions'   -- B2B
-
-    -- Alto valor y frecuencia aunque no tan reciente
-    WHEN F_Score >= 3 AND M_Score >= 4               THEN 'Loyal'           -- B2B
-
-    -- Reciente y frecuente pero monetario aún bajo
-    -- CLAVE: cubre el hueco de 542/541/442
-    WHEN R_Score >= 4                                THEN 'Promising'        -- B2B (cualquier reciente no capturado arriba)
-
-    -- Antes valiosos, ahora inactivos
-    WHEN R_Score <= 2 AND M_Score >= 3                  THEN 'At Risk'
-
-    -- Inactivos de bajo valor — no son Lost, son dormidos
-    WHEN R_Score <= 2 AND M_Score <= 2                  THEN 'Hibernating'
-
-    -- R medio, actividad baja — necesitan estímulo
-    -- IMPORTANTE: R>=2 para no capturar R=1 que ya fue a Hibernating
-    WHEN R_Score = 3  AND F_Score <= 2                  THEN 'Need Attention'
-
-    -- Residual real: lo que queda aquí SÍ es Lost
-    ELSE                                                     'Lost'
-	END AS Segment,*/
-
-    /*CASE
-	    WHEN R_Score =  1 AND F_Score =  1 AND M_Score <= 2 THEN 'Lost'				-- Activo que ha generado poco, con nula frecuencia y ultima compra hace mucho tiempo
-		WHEN R_Score =  5 AND F_Score =  1 AND M_Score <= 2 THEN 'New'				-- Nuevos Clientes
-	    WHEN R_Score >= 4 AND F_Score >= 3 AND M_Score >= 4 THEN 'Champions'
-	    WHEN F_Score >= 3 AND M_Score >= 4                  THEN 'Loyal'
-	    WHEN R_Score >= 4 AND F_Score <  3                  THEN 'Promising'
-	    WHEN R_Score <= 2 AND M_Score >= 3                  THEN 'At Risk'
-	    WHEN R_Score <= 3 AND F_Score <= 2                  THEN 'Need Attention'
-	    WHEN R_Score <= 2 AND M_Score <= 2                  THEN 'Hibernating' -- inactivos de bajo valor
-		ELSE 'Others'
-	END AS Segment,*/
-
 	CASE
 	
 	    /* CLIENTES ESTRATÉGICOS */
