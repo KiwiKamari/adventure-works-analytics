@@ -1029,9 +1029,9 @@ Conditional formatting was applied to revenue-related metrics to improve compara
 </p>
 
 ### Dashboard Preview
-[View Product Profitability Dashboard](#product-profitability--cost-analysis)
+[View Product Profitability Dashboard](#product-profitability-&-cost-analysis)
 
-![Dashboard Screenshot](images/product_profitability.png)
+![Dashboard Screenshot](PowerBI_Pages/product_details.png)
 
 
 
