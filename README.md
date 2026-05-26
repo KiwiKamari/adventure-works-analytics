@@ -1,177 +1,420 @@
 # adventure-works-analytics (SQL Server + Power BI)
+
 ## Overview
 
-This project analyzes the [Adventure Works 2022](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak) transactional database to extract business insights related to product profitability, customer behavior, and sales performance over time.
+This project is an end-to-end Business Intelligence solution built on the Microsoft [Adventure Works 2022](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak) transactional database.
 
-The solution is built using advanced T-SQL queries on MSSQL and later integrated into Power BI for visualization and decision-making [SalesDashboard.pbix](https://raw.githubusercontent.com/KiwiKamari/adventure-works-analytics/refs/heads/main/SalesDashboard.pbix).
+The objective of the project is to transform raw enterprise transactional data into analytical datasets and interactive dashboards focused on:
 
+- Product profitability analysis
+- Sales channel performance
+- Customer segmentation (B2B & B2C)
+- RFM behavioral modeling
+- Pareto revenue concentration analysis
+- Firmographic and demographic profiling
+- Time-series revenue analysis
 
-## Key SQL Implementations
+The analytical layer was developed using advanced T-SQL in Microsoft SQL Server, where multiple SQL views were designed to support scalable business reporting and multidimensional analysis.
 
-### 1. Product Profitability & Cost Analysis
+The solution was later integrated into Power BI to build a multi-page interactive dashboard environment optimized for business exploration, KPI tracking, customer analytics, and profitability evaluation.
 
-A complete KPI model was developed to evaluate product performance, including:
+## Technical Focus
 
-* Revenue
-* Total Cost
-* Profit
-* Margin %
+This project emphasizes:
 
-**Technical approach:**
+- Advanced SQL analytical modeling
+- Window functions (`LAG`, `NTILE`, `ROW_NUMBER`)
+- Historical cost matching using `OUTER APPLY`
+- Customer-level aggregation strategies
+- RFM segmentation models
+- Pareto analysis
+- Time-series calculations (MoM & YoY)
+- Dimensional analytical design for Power BI
+- Interactive dashboard development
 
-* Used `OUTER APPLY` to retrieve the **most recent valid cost per transaction** from `ProductCostHistory`
-* Ensured cost accuracy by matching cost records to the closest valid date (`StartDate <= ModifiedDate`)
-* Aggregated transactional data at product level to avoid duplication
-* Applied `COALESCE` and `NULLIF` to handle missing values and division errors
+## Technologies Used
 
-**Business value:**
+- Microsoft SQL Server
+- T-SQL
+- Power BI
+- DAX
 
-* Identifies high-revenue but low-margin products
-* Enables profitability-based product decisions
+## Power BI Dashboard
+
+[SalesDashboard.pbix](https://raw.githubusercontent.com/KiwiKamari/adventure-works-analytics/refs/heads/main/SalesDashboard.pbix)
+
+# Dataset
+
+This project uses the AdventureWorks2022 sample database from Microsoft, a simulated enterprise transactional dataset designed for business intelligence, sales analytics, and enterprise reporting scenarios.
+
+The analytical solution integrates transactional, product, customer, geographic, demographic, and firmographic information to support multidimensional business analysis across both B2B and B2C environments.
+
+## Main Data Domains
+
+The project combines data from multiple business areas, including:
+
+- Sales
+- Customers
+- Products
+- Production Costs
+- Stores
+- Customer Demographics
+- Customer Firmographics
+- Geographic Information
+
+## Core Tables Used
+
+### Sales
+
+- `Sales.SalesOrderHeader`
+- `Sales.SalesOrderDetail`
+- `Sales.Customer`
+
+### Products & Production
+
+- `Production.Product`
+- `Production.ProductSubcategory`
+- `Production.ProductCategory`
+- `Production.ProductCostHistory`
+
+### Customer & Demographics
+
+- `Person.Person`
+- `Sales.Store`
+- `Sales.vPersonDemographics`
+- `Sales.vStoreWithDemographics`
+- `Sales.vStoreWithAddresses`
+
+### Geography & Addresses
+
+- `Person.Address`
+- `Person.BusinessEntityAddress`
+- `Person.vStateProvinceCountryRegion`
 
 ---
 
-### 2. Sales Channel Analysis (Online vs Offline)
+## Dataset Scope
 
-Sales were classified and analyzed based on transaction channel:
+The analytical model was designed to support seven major business intelligence areas:
 
-* Online vs Offline classification using `OnlineOrderFlag`
-* Aggregation by:
+1. Product Profitability & Cost Analysis
+2. Sales Channel Analysis (Online vs Offline)
+3. Customer B2B Segmentation & RFM
+4. Customer B2C Segmentation & RFM
+5. Customer B2B Firmographics & Value Profitability
+6. Customer B2C Demographics & Value Profitability
+7. Time Series Analysis
 
-  * Customer
-  * Year
-  * Sales channel
+The project includes both transactional-level analysis and aggregated analytical datasets optimized for dashboard performance and interactive business exploration.
 
-**Technical approach:**
+---
 
-* Conditional classification using `CASE`
-* Grouped metrics:
+## Analytical Dataset Architecture
 
-  * Total Orders
-  * Total Sales
-  * Average Order Value
+The analytical layer was developed through multiple SQL views designed specifically for Power BI integration.
 
-**Business value:**
+These views support:
 
-* Compares performance across sales channels
-* Identifies customer channel preferences
+- Product-level profitability analysis
+- Historical production cost matching
+- Customer segmentation models
+- Revenue concentration analysis
+- Geographic and demographic enrichment
+- Customer profitability evaluation
+- Time-series growth analysis
+
+---
+
+## Data Modeling Approach
+
+The project follows an analytical modeling approach focused on dimensional consistency, aggregation control, and reporting scalability.
+
+### Key Modeling Practices
+
+- Aggregated analytical datasets
+- Historical cost matching using `OUTER APPLY`
+- Customer-level enrichment
+- Time-series normalization
+- RFM segmentation models
+- Pareto revenue distribution analysis
+- Address prioritization using `ROW_NUMBER()`
+- Window-function-based analytical calculations
+- Separation of B2B and B2C analytical populations
+- Avoidance of duplicated transactional granularity
+
+### Analytical SQL Features Used
+
+- `CTEs`
+- `LAG()`
+- `NTILE()`
+- `ROW_NUMBER()`
+- `OUTER APPLY`
+- `CASE`
+- `COALESCE`
+- `NULLIF`
+- `DATEFROMPARTS`
+- Windowed aggregations with `SUM() OVER`
+
+# Project Workflow
+
+1. Raw transactional extraction from AdventureWorks2022
+2. SQL-based analytical transformations
+3. Historical cost matching and customer enrichment
+4. Aggregated analytical dataset creation
+5. Power BI data modeling and DAX measures
+6. Dashboard development and business analysis
+
+# Key SQL Concepts Used
+
+- Common Table Expressions (CTEs)
+- Window Functions
+- OUTER APPLY
+- Historical Cost Matching
+- RFM Segmentation Logic
+- Pareto Analysis
+- Time-Series Aggregation
+- Conditional Classification with CASE
+- Customer-Level Data Enrichment
+- Duplicate Prevention Strategies
+- Data Normalization
+- Geographic & Demographic Enrichment
+
+---
+
+# Power BI Integration
+
+The analytical datasets developed in SQL Server were integrated into Power BI to create an interactive business intelligence solution focused on profitability analysis, customer segmentation, channel performance, and time-series analytics.
+
+The Power BI layer was designed to support:
+
+- Dynamic filtering
+- Drill-down exploration
+- KPI monitoring
+- Cross-visual interaction
+- Geographic visualization
+- Comparative analytical reporting
+
+## Data Modeling Highlights
+
+- Aggregated SQL analytical views
+- Customer-level and product-level modeling
+- Historical cost integration
+- Independent B2B and B2C segmentation models
+- Pareto analytical structures
+- Monthly time-series normalization
+- Prevention of many-to-many relationship conflicts
+
+## DAX Features
+
+Main DAX implementations include:
+
+- Revenue calculations
+- Profitability metrics
+- Average Order Value (AOV)
+- MoM Growth %
+- YoY Growth %
+- Dynamic KPI calculations
+- Filter-responsive aggregations
+
+---
+
+# Dashboard Pages
+
+## [1. Product Profitability & Cost Analysis](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/product-profitability-dashboard.md)
+
+Analyzes product-level profitability by combining revenue, historical costs, margins, pricing behavior, and product hierarchy analysis.
+
+---
+
+## [2. Sales Channel Analysis (Online vs Offline)](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/sales-channel-analysis-dashboard.md)
+
+Compares Online and Offline customer purchasing behavior through revenue, orders, customer participation, and Average Order Value analysis.
+
+---
+
+## [3. Customer B2B Segmentation & RFM](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/b2b-rfm-dashboard.md)
+
+Implements a B2B RFM segmentation model combined with Pareto analysis to evaluate customer value concentration and purchasing behavior.
+
+---
+
+## [4. Customer B2C Segmentation & RFM](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/b2c-rfm-dashboard.md)
+
+Implements a B2C RFM segmentation model focused on customer loyalty, behavioral segmentation, and revenue concentration analysis.
+
+---
+
+## [5. Customer B2B Firmographics & Value Profitability](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/fimographics-b2b-dashboard.md)
+
+Combines firmographic attributes, geographic information, business size, and transactional performance for B2B customer analysis.
+
+---
+
+## [6. Customer B2C Demographics & Value Profitability](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/demographics-b2c-dashboard.md)
+
+Combines demographic attributes, customer profitability metrics, and geographic analysis for B2C customer profiling.
+
+---
+
+## [7. Time Series Analysis](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/time-series-analysis-dashboard.md)
+
+Analyzes monthly revenue evolution, MoM growth, YoY growth, and long-term business performance trends.
+
+---
+
+# Dashboards Preview
 
 <p align="center">
-  <img width="65%" height="65%" alt="imagen" src="https://github.com/user-attachments/assets/d2eebb1d-c43a-41e9-89ca-aff80597e97b" />
-  <br>"Customer B2B Segmentation & RFM"<br><br>
 
-  <img width="65%" height="65%" alt="imagen" src="https://github.com/user-attachments/assets/7da0186e-af5e-4fea-8e22-ba1e664f8983" />
-  <br>"Customer B2B Segmentation & RFM"
+  <a href="https://github.com/user-attachments/assets/0a911299-94c5-4176-9fd7-6c7414c9dded">
+    <img width="55%" height="55%" alt="Product Profitability Dashboard"
+    src="https://github.com/user-attachments/assets/0a911299-94c5-4176-9fd7-6c7414c9dded" />
+  </a>
+
+  <br>
+
+  <a href="#dashboard-pages">
+    Product Profitability & Cost Analysis
+  </a>
+
 </p>
 
 ---
 
-### 3. Customer Segmentation (RFM Model)
+<p align="center">
 
-Implemented a full RFM segmentation model:
+  <a href="https://github.com/user-attachments/assets/524a18cf-a1f4-436d-9e21-9f97b27457a3">
+    <img width="55%" height="55%" alt="Sales Channel Dashboard"
+    src="https://github.com/user-attachments/assets/524a18cf-a1f4-436d-9e21-9f97b27457a3" />
+  </a>
 
-* **Recency:** Days since last purchase
-* **Frequency:** Number of orders
-* **Monetary:** Total spending
+  <br>
 
-**Technical approach:**
+  <a href="#dashboard-pages">
+    Sales Channel Analysis (Online vs Offline)
+  </a>
 
-* Used `NTILE(5)` to assign scores for each dimension
-* Built composite RFM score (`R_Score * 100 + F_Score * 10 + M_Score`)
-* Segmented customers into:
-
-  * Champions
-  * Loyal
-  * Potential
-  * At Risk
-  * Lost
-
-**Business value:**
-
-* Identifies high-value and at-risk customers
-* Supports retention and targeting strategies
+</p>
 
 ---
 
-### 4. Customer Demographics & Value Profiling
+<p align="center">
 
-Combined transactional and demographic data to build enriched customer profiles.
+  <a href="https://github.com/user-attachments/assets/9e0338d5-8a05-4e5d-9e07-79010eee138f">
+    <img width="55%" height="55%" alt="B2B RFM Dashboard"
+    src="https://github.com/user-attachments/assets/9e0338d5-8a05-4e5d-9e07-79010eee138f" />
+  </a>
 
-**Metrics included:**
+  <br>
 
-* Total Orders
-* Total Revenue
-* Average Order Value
-* Customer Tenure
-* Customer Type (High/Low value)
+  <a href="#dashboard-pages">
+    Customer B2B Segmentation & RFM
+  </a>
 
-**Technical approach:**
-
-* Used `ROW_NUMBER()` with conditional ordering to prioritize primary addresses
-* Built aggregated sales dataset (`cte_CustomerSales`) to avoid repeated calculations
-* Joined demographic data from multiple sources
-
-**Business value:**
-
-* Enables segmentation by demographics and value
-* Supports customer-centric decision-making
+</p>
 
 ---
 
-### 5. Time Series Analysis (MoM & YoY Growth)
+<p align="center">
 
-Developed a time-based revenue model to analyze trends and growth.
+  <a href="https://github.com/user-attachments/assets/9807db50-6b7a-4634-93f5-08295d108a2e">
+    <img width="55%" height="55%" alt="B2C RFM Dashboard"
+    src="https://github.com/user-attachments/assets/9807db50-6b7a-4634-93f5-08295d108a2e" />
+  </a>
 
-**Technical approach:**
+  <br>
 
-* Created a proper date column using `DATEFROMPARTS` for monthly granularity
-* Used `LAG()` window function to calculate:
+  <a href="#dashboard-pages">
+    Customer B2C Segmentation & RFM
+  </a>
 
-  * Month-over-Month (MoM) growth
-  * Year-over-Year (YoY) growth
-* Handled edge cases using `NULLIF` to prevent division errors
-
-**Business value:**
-
-* Identifies growth trends and seasonality
-* Enables performance tracking over time
+</p>
 
 ---
 
-## Power BI Integration
+<p align="center">
 
-The SQL datasets were directly integrated into Power BI to build an analytical dashboard with:
+  <a href="https://github.com/user-attachments/assets/fa5242bb-9d3b-4273-b2cb-6053f8fd626f">
+    <img width="55%" height="55%" alt="B2B Firmographics Dashboard"
+    src="https://github.com/user-attachments/assets/fa5242bb-9d3b-4273-b2cb-6053f8fd626f" />
+  </a>
 
-* Executive Overview (Revenue, Profit, Growth)
-* Customer Analysis (RFM segmentation)
-* Product Performance (Profitability & margins)
-* Sales Channels (Online vs Offline trends)
+  <br>
 
-**Key practices:**
+  <a href="#dashboard-pages">
+    Customer B2B Firmographics & Value Profitability
+  </a>
 
-* Measures created using DAX (`SUM`, `DIVIDE`, `CALCULATE`)
-* Proper handling of filter context
-* Avoidance of many-to-many relationship issues
-* Separation of fact tables to prevent data duplication
-
----
-
-## Key Insights
-
-* A small segment of customers (Champions) contributes a significant portion of total revenue
-* Some products generate high sales volume but low margins, indicating pricing or cost issues
-* Online and offline channels show different growth behaviors
-* Seasonal patterns are visible in monthly sales trends
-* Customer retention opportunities exist within the “At Risk” segment
+</p>
 
 ---
 
-## Technologies Used
+<p align="center">
 
-* SQL Server (T-SQL)
-* Power BI
-* Data Modeling
-* DAX
+  <a href="https://github.com/user-attachments/assets/ca50c562-4519-4e37-94a0-d6f667816eaf">
+    <img width="55%" height="55%" alt="B2C Demographics Dashboard"
+    src="https://github.com/user-attachments/assets/ca50c562-4519-4e37-94a0-d6f667816eaf" />
+  </a>
+
+  <br>
+
+  <a href="#dashboard-pages">
+    Customer B2C Demographics & Value Profitability
+  </a>
+
+</p>
+
+---
+
+<p align="center">
+
+  <a href="https://github.com/user-attachments/assets/7036e5d1-37c6-45d0-8e27-aebfa8183a40">
+    <img width="55%" height="55%" alt="Time Series Dashboard"
+    src="https://github.com/user-attachments/assets/7036e5d1-37c6-45d0-8e27-aebfa8183a40" />
+  </a>
+
+  <br>
+
+  <a href="#dashboard-pages">
+    Time Series Analysis
+  </a>
+
+</p>
+
+---
+
+# Extended Documentation
+
+## SQL Documentation
+
+Detailed SQL implementations and technical breakdowns:
+
+- Product Profitability & Cost Analysis
+- Sales Channel Analysis
+- B2B & B2C RFM Models
+- Pareto Revenue Analysis
+- Firmographic & Demographic Modeling
+- Time Series Analysis
+
+[View SQL Documentation](docs/sql/)
+
+---
+
+## Power BI Documentation
+
+Detailed dashboard explanations, DAX logic, and data modeling structure.
+
+[View Power BI Documentation](docs/powerbi/)
+
+---
+
+## Business Insights & Case Study
+
+Extended business insights, analytical interpretations, and strategic findings are documented separately in the project case study.
+
+[View Full Case Study](NOTION_LINK)
+
+
 
 ---
 
@@ -198,9 +441,3 @@ Feel free to connect with me on the following platforms:
 Check out my personal projects!
 - ✅ **sql-data-analytics-project-main:** [GIT Repo](https://github.com/KiwiKamari/sql-data-analytics-project-main)
 - ✅ **user_analytics:** [GIT Repo](https://github.com/KiwiKamari/user_analytics)
-
-
-### 🌟 About Me
-
-Hello there! I'm **Luis Espinosa**. I'm a **software developer** with an interest in data analysis and database management using Microsoft SQL Server, Python, and PowerBI. I also have experience developing with C# in Visual Studio and with the Unity game engine!
-
