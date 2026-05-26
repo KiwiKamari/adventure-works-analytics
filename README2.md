@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an end-to-end Business Intelligence solution built on the Microsoft AdventureWorks2022 transactional database.
+This project is an end-to-end Business Intelligence solution built on the Microsoft [Adventure Works 2022](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak) transactional database.
 
 The objective of the project is to transform raw enterprise transactional data into analytical datasets and interactive dashboards focused on:
 
@@ -61,8 +61,6 @@ The project combines data from multiple business areas, including:
 - Customer Demographics
 - Customer Firmographics
 - Geographic Information
-
----
 
 ## Core Tables Used
 
