@@ -220,43 +220,43 @@ Main DAX implementations include:
 
 # Dashboard Pages
 
-## [1. Product Profitability & Cost Analysis](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/product-profitability-dashboard.md)
+### [1. Product Profitability & Cost Analysis](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/1-product-profitability-dashboard.md)
 
 Analyzes product-level profitability by combining revenue, historical costs, margins, pricing behavior, and product hierarchy analysis.
 
 ---
 
-## [2. Sales Channel Analysis (Online vs Offline)](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/sales-channel-analysis-dashboard.md)
+### [2. Sales Channel Analysis (Online vs Offline)](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/2-sales-channel-analysis-dashboard.md)
 
 Compares Online and Offline customer purchasing behavior through revenue, orders, customer participation, and Average Order Value analysis.
 
 ---
 
-## [3. Customer B2B Segmentation & RFM](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/b2b-rfm-dashboard.md)
+### [3. Customer B2B Segmentation & RFM](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/3-b2b-rfm-dashboard.md)
 
 Implements a B2B RFM segmentation model combined with Pareto analysis to evaluate customer value concentration and purchasing behavior.
 
 ---
 
-## [4. Customer B2C Segmentation & RFM](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/b2c-rfm-dashboard.md)
+### [4. Customer B2C Segmentation & RFM](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/4-b2c-rfm-dashboard.md)
 
 Implements a B2C RFM segmentation model focused on customer loyalty, behavioral segmentation, and revenue concentration analysis.
 
 ---
 
-## [5. Customer B2B Firmographics & Value Profitability](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/fimographics-b2b-dashboard.md)
+### [5. Customer B2B Firmographics & Value Profitability](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/5-fimographics-b2b-dashboard.md)
 
 Combines firmographic attributes, geographic information, business size, and transactional performance for B2B customer analysis.
 
 ---
 
-## [6. Customer B2C Demographics & Value Profitability](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/demographics-b2c-dashboard.md)
+### [6. Customer B2C Demographics & Value Profitability](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/6-demographics-b2c-dashboard.md)
 
 Combines demographic attributes, customer profitability metrics, and geographic analysis for B2C customer profiling.
 
 ---
 
-## [7. Time Series Analysis](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/time-series-analysis-dashboard.md)
+### [7. Time Series Analysis](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/7-time-series-analysis-dashboard.md)
 
 Analyzes monthly revenue evolution, MoM growth, YoY growth, and long-term business performance trends.
 
