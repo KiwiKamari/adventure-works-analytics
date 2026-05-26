@@ -8,11 +8,6 @@
   </a>
 
   <br>
-
-  <a href="#product-profitability--cost-analysis">
-    Product Profitability & Cost Analysis
-  </a>
-
 </p>
 
 This dashboard page focuses on product-level profitability analysis by combining revenue, historical costs, margins, pricing, and product hierarchy dimensions into a single analytical view.
