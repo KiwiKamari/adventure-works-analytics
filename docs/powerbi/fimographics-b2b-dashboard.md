@@ -5,14 +5,9 @@
   <a href="https://github.com/user-attachments/assets/f4e600fe-4101-41e2-b2cb-867999077340">
     <img width="55%" height="55%" alt="B2B Firmographics Dashboard"
     src="https://github.com/user-attachments/assets/fa5242bb-9d3b-4273-b2cb-6053f8fd626f" />
-" />
   </a>
 
   <br>
-
-  <a href="#customer-b2b-firmographics--value-profitability">
-    Customer B2B Firmographics & Value Profitability
-  </a>
 
 </p>
 
