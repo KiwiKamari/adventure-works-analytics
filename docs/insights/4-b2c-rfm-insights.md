@@ -11,8 +11,7 @@ The B2C segmentation analysis shows that customer distribution is uneven across 
 
 Certain segments contain a significantly larger portion of the customer base, while highly valuable customers remain comparatively concentrated.
 
-> [!NOTE]
-> RFM models were computed exclusively using customers with transactional history available in `SalesOrderHeader`.
+> [!IMPORTANT]
 > Customers without purchases were intentionally excluded from Recency, Frequency, and Monetary calculations to preserve analytical validity.
 
 ### Key Findings
