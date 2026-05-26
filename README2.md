@@ -1015,38 +1015,6 @@ Conditional formatting was applied to revenue-related metrics to improve compara
 
 ---
 
-
-
-# Dashboards Preview
-
-<p align="center">
-  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/0a911299-94c5-4176-9fd7-6c7414c9dded" />
-  <br>
-  <a href="##product-profitability-&-cost-analysis">
-  "Product Profitability & Cost Analysis"
-  </a>
-  <br><br>
-  
-  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/524a18cf-a1f4-436d-9e21-9f97b27457a3" />
-  <br>"Sales Channel Analysis (Online vs Offline)"<br><br>
-  
-  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/9e0338d5-8a05-4e5d-9e07-79010eee138f" />
-  <br>"Customer B2B Segmentation & RFM"<br><br>
-  
-  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/9807db50-6b7a-4634-93f5-08295d108a2e" />
-  <br>"Customer B2C Segmentation & RFM"<br><br>
-  
-  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/f4e600fe-4101-41e2-b2cb-867999077340" />
-  <br>"Customer B2B Firmographics & Value Profitability"<br><br>
-  
-  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/ca50c562-4519-4e37-94a0-d6f667816eaf" />
-  <br>"Customer B2C Demographics & Value Profitability"<br><br>
-  
-  <img width="55%" height="55%" alt="imagen" src="https://github.com/user-attachments/assets/7036e5d1-37c6-45d0-8e27-aebfa8183a40" />
-  <br>"Time Series Analysis"<br><br>
-</p>
-
-
 # Dashboards Preview
 
 <p align="center">
@@ -1121,7 +1089,8 @@ Conditional formatting was applied to revenue-related metrics to improve compara
 
   <a href="https://github.com/user-attachments/assets/f4e600fe-4101-41e2-b2cb-867999077340">
     <img width="55%" height="55%" alt="B2B Firmographics Dashboard"
-    src="https://github.com/user-attachments/assets/f4e600fe-4101-41e2-b2cb-867999077340" />
+    src="https://github.com/user-attachments/assets/fa5242bb-9d3b-4273-b2cb-6053f8fd626f" />
+" />
   </a>
 
   <br>
