@@ -9,10 +9,6 @@
 
   <br>
 
-  <a href="#customer-b2b-segmentation--rfm">
-    Customer B2B Segmentation & RFM
-  </a>
-
 </p>
 
 This dashboard page focuses on B2B customer segmentation using an RFM analytical model combined with Pareto analysis to evaluate customer value concentration, purchasing behavior, and revenue contribution.
