@@ -1,10 +1,57 @@
+# adventure-works-analytics (SQL Server + Power BI)
+
+## Overview
+
+This project is an end-to-end Business Intelligence solution built on the Microsoft AdventureWorks2022 transactional database.
+
+The objective of the project is to transform raw enterprise transactional data into analytical datasets and interactive dashboards focused on:
+
+- Product profitability analysis
+- Sales channel performance
+- Customer segmentation (B2B & B2C)
+- RFM behavioral modeling
+- Pareto revenue concentration analysis
+- Firmographic and demographic profiling
+- Time-series revenue analysis
+
+The analytical layer was developed using advanced T-SQL in Microsoft SQL Server, where multiple SQL views were designed to support scalable business reporting and multidimensional analysis.
+
+The solution was later integrated into Power BI to build a multi-page interactive dashboard environment optimized for business exploration, KPI tracking, customer analytics, and profitability evaluation.
+
+## Technical Focus
+
+This project emphasizes:
+
+- Advanced SQL analytical modeling
+- Window functions (`LAG`, `NTILE`, `ROW_NUMBER`)
+- Historical cost matching using `OUTER APPLY`
+- Customer-level aggregation strategies
+- RFM segmentation models
+- Pareto analysis
+- Time-series calculations (MoM & YoY)
+- Dimensional analytical design for Power BI
+- Interactive dashboard development
+
+## Technologies Used
+
+- Microsoft SQL Server
+- T-SQL
+- Power BI
+- DAX
+
+## Power BI Dashboard
+
+[SalesDashboard.pbix](https://raw.githubusercontent.com/KiwiKamari/adventure-works-analytics/refs/heads/main/SalesDashboard.pbix)
+
 # Dataset
 
-This project uses the AdventureWorks2022 sample database from Microsoft, a simulated enterprise dataset designed for business intelligence and analytical scenarios.
+This project uses the AdventureWorks2022 sample database from Microsoft, a simulated enterprise transactional dataset designed for business intelligence, sales analytics, and enterprise reporting scenarios.
+
+The analytical solution integrates transactional, product, customer, geographic, demographic, and firmographic information to support multidimensional business analysis across both B2B and B2C environments.
 
 ## Main Data Domains
 
-The analysis combines data from multiple business areas, including:
+The project combines data from multiple business areas, including:
 
 - Sales
 - Customers
@@ -12,22 +59,28 @@ The analysis combines data from multiple business areas, including:
 - Production Costs
 - Stores
 - Customer Demographics
+- Customer Firmographics
 - Geographic Information
+
+---
 
 ## Core Tables Used
 
 ### Sales
+
 - `Sales.SalesOrderHeader`
 - `Sales.SalesOrderDetail`
 - `Sales.Customer`
 
 ### Products & Production
+
 - `Production.Product`
 - `Production.ProductSubcategory`
 - `Production.ProductCategory`
 - `Production.ProductCostHistory`
 
 ### Customer & Demographics
+
 - `Person.Person`
 - `Sales.Store`
 - `Sales.vPersonDemographics`
@@ -35,33 +88,96 @@ The analysis combines data from multiple business areas, including:
 - `Sales.vStoreWithAddresses`
 
 ### Geography & Addresses
+
 - `Person.Address`
 - `Person.BusinessEntityAddress`
 - `Person.vStateProvinceCountryRegion`
 
+---
+
 ## Dataset Scope
 
-The project focuses on:
+The analytical model was designed to support seven major business intelligence areas:
 
-- Product profitability analysis
-- Customer segmentation (B2B & B2C)
-- Sales channel analysis
-- Revenue trend analysis
-- Customer demographic and firmographic profiling
-- Pareto revenue distribution analysis
+1. Product Profitability & Cost Analysis
+2. Sales Channel Analysis (Online vs Offline)
+3. Customer B2B Segmentation & RFM
+4. Customer B2C Segmentation & RFM
+5. Customer B2B Firmographics & Value Profitability
+6. Customer B2C Demographics & Value Profitability
+7. Time Series Analysis
+
+The project includes both transactional-level analysis and aggregated analytical datasets optimized for dashboard performance and interactive business exploration.
+
+---
+
+## Analytical Dataset Architecture
+
+The analytical layer was developed through multiple SQL views designed specifically for Power BI integration.
+
+These views support:
+
+- Product-level profitability analysis
+- Historical production cost matching
+- Customer segmentation models
+- Revenue concentration analysis
+- Geographic and demographic enrichment
+- Customer profitability evaluation
+- Time-series growth analysis
+
+---
 
 ## Data Modeling Approach
 
-The analytical layer was built using SQL views designed for Power BI integration.
+The project follows an analytical modeling approach focused on dimensional consistency, aggregation control, and reporting scalability.
 
-Key modeling practices included:
+### Key Modeling Practices
 
 - Aggregated analytical datasets
-- Historical cost matching
+- Historical cost matching using `OUTER APPLY`
 - Customer-level enrichment
 - Time-series normalization
 - RFM segmentation models
+- Pareto revenue distribution analysis
+- Address prioritization using `ROW_NUMBER()`
+- Window-function-based analytical calculations
+- Separation of B2B and B2C analytical populations
 - Avoidance of duplicated transactional granularity
+
+### Analytical SQL Features Used
+
+- `CTEs`
+- `LAG()`
+- `NTILE()`
+- `ROW_NUMBER()`
+- `OUTER APPLY`
+- `CASE`
+- `COALESCE`
+- `NULLIF`
+- `DATEFROMPARTS`
+- Windowed aggregations with `SUM() OVER`
+
+# Project Workflow
+
+1. Raw transactional extraction from AdventureWorks2022
+2. SQL-based analytical transformations
+3. Historical cost matching and customer enrichment
+4. Aggregated analytical dataset creation
+5. Power BI data modeling and DAX measures
+6. Dashboard development and business analysis
+
+# Key SQL Concepts Used
+
+- Common Table Expressions (CTEs)
+- Window Functions
+- OUTER APPLY
+- Historical Cost Matching
+- RFM Segmentation Logic
+- Pareto Analysis
+- Time-Series Aggregation
+- Conditional Classification with CASE
+- Customer-Level Data Enrichment
+- Data Normalization
 
 # SQL Implementations
 
@@ -448,9 +564,82 @@ Developed a time-series revenue model to analyze sales performance, growth trend
 - Enables monthly and yearly performance tracking
 - Supports strategic forecasting and trend analysis
 
-
+---
 
 # Power BI Integration
+
+The analytical datasets developed in SQL Server were integrated into Power BI to create a fully interactive business intelligence solution focused on profitability analysis, customer segmentation, channel performance, and time-series analytics.
+
+The Power BI layer was designed to support multidimensional exploration through dynamic filtering, drill-down navigation, KPI monitoring, and comparative visual analysis.
+
+## Data Modeling Approach
+
+The Power BI model was built using aggregated SQL analytical views specifically designed to optimize reporting performance and reduce duplicated transactional granularity.
+
+### Modeling Principles
+
+- Separation of analytical datasets by business domain
+- Customer-level and product-level aggregation
+- Time-series normalization at monthly granularity
+- Historical cost integration for profitability analysis
+- Independent B2B and B2C segmentation models
+- Pareto analytical structures for revenue concentration analysis
+- Prevention of many-to-many relationship conflicts
+
+## DAX & Analytical Calculations
+
+DAX measures were implemented to support dynamic calculations and interactive reporting behavior.
+
+### Main DAX Applications
+
+- Revenue calculations
+- Profitability metrics
+- Average Order Value (AOV)
+- MoM Growth %
+- YoY Growth %
+- Dynamic KPI calculations
+- Filter-responsive aggregations
+- Pareto cumulative calculations
+
+### Common Functions Used
+
+- `SUM`
+- `DIVIDE`
+- `CALCULATE`
+- `FILTER`
+- `ALL`
+- `IF`
+
+## Interactive Reporting Features
+
+The dashboards were designed to support interactive analytical exploration through:
+
+- Dynamic slicers
+- Drill-down navigation
+- Cross-filtering between visuals
+- Conditional formatting
+- Geographic visualization
+- Hierarchical product analysis
+- Segment-based customer analysis
+- Time-series trend exploration
+
+## Dashboard Scope
+
+The Power BI solution includes seven analytical dashboard pages:
+
+1. Product Profitability & Cost Analysis
+2. Sales Channel Analysis (Online vs Offline)
+3. Customer B2B Segmentation & RFM
+4. Customer B2C Segmentation & RFM
+5. Customer B2B Firmographics & Value Profitability
+6. Customer B2C Demographics & Value Profitability
+7. Time Series Analysis
+
+Each dashboard page was designed to address a specific analytical domain while maintaining consistent KPI logic, filtering behavior, and business reporting structure.
+
+
+
+# Dashboard Pages
 
 ## Product Profitability & Cost Analysis
 
@@ -908,7 +1097,7 @@ This dashboard page focuses on B2B customer profiling by combining firmographic 
 
 * Analyze B2B customer value and profitability
 * Evaluate business customers using firmographic attributes
-* Compare revenue contribution across industries and store types
+* Compare AOV contribution across industries and store types
 * Analyze customer distribution by geography
 * Identify high-value business customer groups
 
@@ -963,23 +1152,6 @@ Bubble sizing improves comparative visibility between countries.
 
 ---
 
-#### Customer Revenue vs Customer Tenure
-
-Scatter plot comparing:
-
-* Customer tenure
-* Total customer revenue
-
-Purpose:
-
-* Analyze relationship between customer longevity and profitability
-* Detect long-term high-value business customers
-* Identify customer retention patterns
-
-Bubble distribution supports comparative customer-level analysis.
-
----
-
 #### Revenue by Occupation
 
 Horizontal bar chart ranking revenue contribution across occupational groups.
@@ -1012,6 +1184,230 @@ Purpose:
 * Compare profitability and operational behavior across customers
 
 Conditional formatting was applied to revenue-related metrics to improve comparative readability.
+
+---
+## Customer B2C Demographics & Value Profitability
+
+This dashboard page focuses on B2C customer profiling by combining demographic information, customer value metrics, geographic distribution, and purchasing behavior into a unified analytical view.
+
+### Main Objectives
+
+* Analyze B2C customer value and profitability
+* Evaluate consumer purchasing behavior using demographic attributes
+* Compare revenue contribution across demographic groups
+* Analyze customer distribution by geography
+* Identify high-value consumer profiles
+
+### Dashboard Components
+
+#### KPI Cards
+
+The top section contains executive customer profitability KPIs:
+
+* Total Revenue
+* Average Order Value
+* Average Customer Tenure
+* Total Customers
+
+These KPIs dynamically respond to all demographic and geographic filters.
+
+### Filtering & Navigation
+
+Interactive slicers were implemented for demographic customer analysis:
+
+* Gender
+* Marital Status
+* Country
+
+These filters support multidimensional exploration across consumer demographic groups and geographic regions.
+
+### Visual Analytics
+
+#### Revenue by Gender
+
+Donut chart representing revenue distribution across gender groups.
+
+Purpose:
+
+* Compare revenue participation between customer groups
+* Analyze demographic contribution distribution
+* Identify dominant consumer segments
+
+---
+
+#### Revenue by Country
+
+Map visualization representing customer revenue distribution geographically.
+
+Purpose:
+
+* Analyze geographic revenue concentration
+* Compare regional customer contribution
+* Identify high-performing consumer markets
+
+Bubble sizing improves comparative visibility between countries.
+
+---
+
+#### Revenue by Occupation
+
+Horizontal bar chart ranking revenue contribution across occupational groups.
+
+Purpose:
+
+* Compare revenue generation by occupation category
+* Identify customer groups with stronger purchasing contribution
+* Support demographic-based customer analysis
+
+---
+
+#### B2C Customer Details Matrix
+
+Detailed analytical matrix displaying:
+
+* Customer Name
+* Country
+* Occupation
+* Customer Tenure
+* Total Orders
+* Revenue
+* Average Order Value
+
+Purpose:
+
+* Provide customer-level analytical detail
+* Support drill-down exploration
+* Validate aggregated business metrics
+* Compare profitability and purchasing behavior across customers
+
+Conditional formatting was applied to revenue-related metrics to improve comparative readability.
+
+---
+
+
+
+## Time Series Analysis
+
+This dashboard page focuses on revenue evolution over time by analyzing monthly sales performance, growth behavior, and long-term business trends using time-series analytical techniques.
+
+### Main Objectives
+
+* Analyze monthly revenue evolution
+* Evaluate business growth trends over time
+* Compare Month-over-Month and Year-over-Year performance
+* Detect seasonality and revenue fluctuations
+* Support long-term performance monitoring
+
+### Dashboard Components
+
+#### KPI Cards
+
+The top section contains executive time-series KPIs:
+
+* Total Revenue
+* Average Monthly Revenue
+* Average MoM Growth %
+* Average YoY Growth %
+
+These KPIs dynamically respond to all temporal filters.
+
+### Filtering & Navigation
+
+Interactive slicers were implemented for temporal analysis:
+
+* Year
+* Month
+
+These filters support comparative revenue analysis across different time periods.
+
+### Visual Analytics
+
+#### Monthly Revenue Trend
+
+Line chart representing monthly revenue evolution over time.
+
+Purpose:
+
+* Analyze revenue growth trends
+* Detect seasonality and business fluctuations
+* Compare performance consistency across periods
+
+---
+
+#### MoM Growth %
+
+Column chart displaying Month-over-Month revenue growth percentages.
+
+Purpose:
+
+* Evaluate short-term revenue variation
+* Detect acceleration and slowdown periods
+* Analyze monthly business momentum
+
+---
+
+#### YoY Growth %
+
+Line chart representing Year-over-Year revenue growth trends.
+
+Purpose:
+
+* Compare annual business performance evolution
+* Evaluate long-term growth consistency
+* Detect structural revenue trend changes
+
+---
+
+#### Revenue vs Previous Year Revenue
+
+Combined line chart comparing:
+
+* Current revenue
+* Previous year revenue
+
+Purpose:
+
+* Compare historical revenue performance
+* Evaluate annual progression patterns
+* Identify periods of business expansion or contraction
+
+---
+
+#### Monthly Revenue Detail Matrix
+
+Detailed analytical matrix displaying:
+
+* Year
+* Month
+* Revenue
+* Previous Month Revenue
+* Previous Year Revenue
+* MoM Growth %
+* YoY Growth %
+
+Purpose:
+
+* Provide detailed time-series analytical breakdown
+* Validate aggregated trend metrics
+* Support period-over-period comparison
+* Enable granular business performance evaluation
+
+Conditional formatting was applied to growth metrics to improve comparative readability.
+
+---
+
+# Power BI Features
+
+- Interactive slicers
+- Drill-down analysis
+- Conditional formatting
+- KPI cards
+- Pareto visualizations
+- Scatter analysis
+- Geographic mapping
+- Dynamic filtering
+- DAX measures
+- Cross-visual interactions
 
 ---
 
