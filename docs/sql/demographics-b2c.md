@@ -2,7 +2,7 @@
 
 Developed an enriched B2C analytical dataset combining transactional performance, demographic attributes, and customer value metrics.
 
-> **Dataset Scope:**  
+> [!NOTE]  
 > This analysis includes both purchasing and non-purchasing customers available in the unified customer dataset (`vw_CustomerInfo`).
 
 ## Key Metrics
