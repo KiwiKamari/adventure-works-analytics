@@ -11,7 +11,6 @@ The segmentation analysis reveals that the B2B customer base is unevenly distrib
 Certain segments contain a significantly larger share of customers, while high-value strategic groups remain comparatively concentrated.
 
 > [!IMPORTANT]
-> RFM models were computed exclusively using customers with transactional history available in `SalesOrderHeader`.
 > Customers without purchases were intentionally excluded from Recency, Frequency, and Monetary calculations to preserve analytical validity.
 
 ### Key Findings
