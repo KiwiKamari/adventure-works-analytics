@@ -412,6 +412,8 @@ Detailed dashboard explanations, DAX logic, and data modeling structure.
 
 Extended business insights, analytical interpretations, and strategic findings are documented separately in the project case study.
 
+[View Business Insights](docs/insights)
+
 [View Full Case Study](https://mangrove-string-658.notion.site/Product-Profitability-Cost-Analysis-Case-Study-36c3df2b526e806e856fcb087b77ca57)
 
 
