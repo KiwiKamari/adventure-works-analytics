@@ -7,12 +7,6 @@
     src="https://github.com/user-attachments/assets/524a18cf-a1f4-436d-9e21-9f97b27457a3" />
   </a>
 
-  <br>
-
-  <a href="#sales-channel-analysis-online-vs-offline">
-    Sales Channel Analysis (Online vs Offline)
-  </a>
-
 </p>
 
 This dashboard page analyzes customer purchasing behavior across sales channels by comparing Online and Offline transactions through revenue, order activity, customer participation, and Average Order Value (AOV).
