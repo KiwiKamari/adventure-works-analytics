@@ -9,10 +9,6 @@
 
   <br>
 
-  <a href="#time-series-analysis">
-    Time Series Analysis
-  </a>
-
 </p>
 
 This dashboard page focuses on revenue evolution over time by analyzing monthly sales performance, growth behavior, and long-term business trends using time-series analytical techniques.
