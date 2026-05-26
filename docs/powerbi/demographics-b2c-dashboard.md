@@ -9,10 +9,6 @@
 
   <br>
 
-  <a href="#customer-b2c-demographics--value-profitability">
-    Customer B2C Demographics & Value Profitability
-  </a>
-
 </p>
 
 This dashboard page focuses on B2C customer profiling by combining demographic information, customer value metrics, geographic distribution, and purchasing behavior into a unified analytical view.
