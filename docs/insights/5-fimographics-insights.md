@@ -11,7 +11,7 @@ The analysis reveals substantial differences in revenue contribution across B2B 
 Certain business types generate a significantly larger share of total revenue, indicating stronger purchasing capacity and higher transactional activity.
 
 > [!Note]
-> This analysis includes both purchasing and non-purchasing customers available in the unified customer dataset (`vw_CustomerInfo`).
+> This analysis includes both purchasing and non-purchasing customers.
 
 ### Key Findings
 
