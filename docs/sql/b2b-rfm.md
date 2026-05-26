@@ -2,7 +2,7 @@
 
 Developed a B2B-focused RFM segmentation model to analyze customer value, engagement, and revenue concentration across business accounts.
 
-> **Methodological Note:**  
+> [!IMPORTANT]  
 > RFM models were computed exclusively using customers with transactional history available in `SalesOrderHeader`.  
 > Customers without purchases were intentionally excluded from Recency, Frequency, and Monetary calculations to preserve analytical validity.
 
