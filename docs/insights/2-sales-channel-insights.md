@@ -3,9 +3,8 @@
 ## Revenue Distribution Across Sales Channels
 
 <p align="center">
-  ![sales_channel_analysis.png](attachment:5994801e-18a6-48b4-aa3b-1c64c6a8ee93:sales_channel_analysis.png)
+<img width="65%" height="65%" alt="imagen" src="https://github.com/user-attachments/assets/6f4b48ba-f7f5-4f94-8fb0-24def92efac7" />
 </p>
-
 
 The analysis shows a clear difference in revenue contribution between Online and Offline channels across the evaluated years.
 
@@ -22,7 +21,7 @@ Sales participation is not evenly distributed, indicating that customer purchasi
 ## Customer Purchasing Behavior by Channel
 
 <p align="center">
-  ![image.png](attachment:2dbcba4a-8c95-42a9-8058-698f7ca06806:image.png)  
+  <img width="30%" height="30%" alt="imagen" src="https://github.com/user-attachments/assets/f364d5c3-4802-43ce-ae56-095a44733ed6" />
 </p>
 
 The AOV analysis reveals that transaction behavior differs between Online and Offline customers.
@@ -40,7 +39,7 @@ Certain channels generate larger average transactions, suggesting distinct purch
 ## Order Activity Trends
 
 <p align="center">
-  ![image.png](attachment:bfc435fc-d9c9-4de3-9761-3372c2fec6f8:image.png)
+  <img width="30%" height="30%" alt="imagen" src="https://github.com/user-attachments/assets/03cb1f87-f232-4249-a4ec-dfd47d546a95" />
 </p>
 
 The yearly order distribution highlights how transaction activity changes over time between channels.
@@ -58,7 +57,7 @@ The heatmap visualization reveals periods of stronger operational activity and c
 ## Customer Concentration by Channel
 
 <p align="center">
-  ![image.png](attachment:86ce8505-4c01-449e-8bf0-8b9694c735fb:image.png)
+  <img width="35%" height="35%" alt="imagen" src="https://github.com/user-attachments/assets/f396c82a-3bdf-4fa6-80fe-09fa173efe83" />
 </p>
 
 The Top 20 Customers analysis shows that revenue generation is partially concentrated among a limited number of customers within each channel.
@@ -76,7 +75,7 @@ This suggests that certain customers have a disproportionately large impact on c
 ## Channel Participation Structure
 
 <p align="center">
-  ![image.png](attachment:b3381ad4-e4d3-436a-94cb-473594540371:2c789635-f012-4d4e-ac72-12ca4fc384f7.png)
+  <img width="30%" height="30%" alt="imagen" src="https://github.com/user-attachments/assets/b5a9d71d-2c20-4c31-a1f9-a44d77671ff0" />
 </p>
 
 The participation analysis demonstrates the relative contribution of each sales channel to overall business revenue.
@@ -94,7 +93,7 @@ This provides a high-level view of operational dependence on Online versus Offli
 ## Revenue Evolution Across Channels
 
 <p align="center">
-  ![image.png](attachment:dad4552a-8243-470a-abb6-d74073316a90:image.png)
+  <img width="30%" height="30%" alt="imagen" src="https://github.com/user-attachments/assets/ed980252-63d7-49a1-9f53-1bfba493bf59" />
 </p>
 
 The yearly sales comparison reveals that revenue contribution evolves differently between Online and Offline channels over time.
