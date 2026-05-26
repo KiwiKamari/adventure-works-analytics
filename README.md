@@ -385,7 +385,7 @@ Analyzes monthly revenue evolution, MoM growth, YoY growth, and long-term busine
 
 # Extended Documentation
 
-## SQL Documentation
+## <img width="3.5%" height="3.5%" alt="imagen" src="https://github.com/user-attachments/assets/6bf51316-d735-440c-aa93-f8a714a37dd8" /> SQL Documentation
 
 Detailed SQL implementations and technical breakdowns:
 
@@ -400,7 +400,7 @@ Detailed SQL implementations and technical breakdowns:
 
 ---
 
-## Power BI Documentation
+## <img width="2.5%" height="2.5%" aalt="imagen" src="https://github.com/user-attachments/assets/12512802-b682-49f9-bc36-c07eaada6016" /> Power BI Documentation
 
 Detailed dashboard explanations, DAX logic, and data modeling structure.
 
@@ -408,7 +408,7 @@ Detailed dashboard explanations, DAX logic, and data modeling structure.
 
 ---
 
-## Business Insights & Case Study
+## <img width="2.5%" height="2.5%" alt="imagen" src="https://github.com/user-attachments/assets/6b2ee20a-1f5c-4aca-929d-903872a91466" /> Business Insights & Case Study
 
 Extended business insights, analytical interpretations, and strategic findings are documented separately in the project case study.
 
