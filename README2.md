@@ -156,6 +156,10 @@ Developed a customer-level sales channel analysis model to compare purchasing be
 
 Developed a B2B-focused RFM segmentation model to analyze customer value, engagement, and revenue concentration across business accounts.
 
+> **Methodological Note:**  
+> RFM models were computed exclusively using customers with transactional history available in `SalesOrderHeader`.  
+> Customers without purchases were intentionally excluded from Recency, Frequency, and Monetary calculations to preserve analytical validity.
+
 **Key Metrics**
 
 - Recency
@@ -221,6 +225,10 @@ Implemented a Pareto revenue model to identify the concentration of revenue amon
 ### 4. Customer B2C Segmentation & RFM Analysis
 
 Developed a B2C-focused RFM segmentation model to analyze consumer purchasing behavior, loyalty, and revenue contribution.
+
+> **Methodological Note:**  
+> RFM models were computed exclusively using customers with transactional history available in `SalesOrderHeader`.  
+> Customers without purchases were intentionally excluded from Recency, Frequency, and Monetary calculations to preserve analytical validity.
 
 **Key Metrics**
 
@@ -290,6 +298,9 @@ Implemented a Pareto revenue distribution model to identify revenue concentratio
 
 Developed an enriched B2B analytical dataset combining transactional performance, firmographic attributes, and customer value metrics.
 
+> **Dataset Scope:**  
+> This analysis includes both purchasing and non-purchasing customers available in the unified customer dataset (`vw_CustomerInfo`).
+
 **Key Metrics**
 
 - Total Orders
@@ -343,6 +354,9 @@ Developed an enriched B2B analytical dataset combining transactional performance
 ### 6. Customer B2C Demographics & Value Profitability
 
 Developed an enriched B2C analytical dataset combining transactional performance, demographic attributes, and customer value metrics.
+
+> **Dataset Scope:**  
+> This analysis includes both purchasing and non-purchasing customers available in the unified customer dataset (`vw_CustomerInfo`).
 
 ## Key Metrics
 
@@ -1155,6 +1169,11 @@ Conditional formatting was applied to revenue-related metrics to improve compara
 
 
 
+## Business Insights
+
+Detailed analytical interpretations, business findings, and dashboard-driven insights are documented separately in the project case study.
+
+[View Full Case Study](NOTION_LINK)
 
 
 
