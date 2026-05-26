@@ -1,6 +1,6 @@
 # adventure-works-analytics (SQL Server + Power BI)
 
-## Overview
+## 🌟 Overview
 
 This project is an end-to-end Business Intelligence solution built on the Microsoft [Adventure Works 2022](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak) transactional database.
 
@@ -39,11 +39,11 @@ This project emphasizes:
 - Power BI
 - DAX
 
-## Power BI Dashboard
+## 🚀 Power BI Dashboard
 
 [SalesDashboard.pbix](https://raw.githubusercontent.com/KiwiKamari/adventure-works-analytics/refs/heads/main/SalesDashboard.pbix)
 
-# Dataset
+# 💡 Dataset
 
 This project uses the AdventureWorks2022 sample database from Microsoft, a simulated enterprise transactional dataset designed for business intelligence, sales analytics, and enterprise reporting scenarios.
 
@@ -181,7 +181,7 @@ The project follows an analytical modeling approach focused on dimensional consi
 
 ---
 
-# Power BI Integration
+# 📝 Power BI Integration
 
 The analytical datasets developed in SQL Server were integrated into Power BI to create an interactive business intelligence solution focused on profitability analysis, customer segmentation, channel performance, and time-series analytics.
 
@@ -218,7 +218,7 @@ Main DAX implementations include:
 
 ---
 
-# Dashboard Pages
+# 📊 Dashboard Pages
 
 ### [1. Product Profitability & Cost Analysis](https://github.com/KiwiKamari/adventure-works-analytics/blob/main/docs/powerbi/1-product-profitability-dashboard.md)
 
@@ -418,7 +418,7 @@ Extended business insights, analytical interpretations, and strategic findings a
 
 ---
 
-## Conclusion
+## ✨ Conclusion
 
 This project demonstrates the ability to:
 
