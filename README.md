@@ -477,5 +477,5 @@ Feel free to connect with me on the following platforms:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luis-gerardo-espinosa-gonz%C3%A1lez-608139276/)
 
 Check out my personal projects!
-- ✅ **sql-data-analytics-project-main:** [GIT Repo](https://github.com/KiwiKamari/sql-data-analytics-project-main)
+- ✅ **sql-data-analytics:** [GIT Repo](https://github.com/KiwiKamari/sql-data-analytics)
 - ✅ **user_analytics:** [GIT Repo](https://github.com/KiwiKamari/user_analytics)
