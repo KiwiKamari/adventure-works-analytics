@@ -422,13 +422,49 @@ Extended business insights, analytical interpretations, and strategic findings a
 
 ## ✨ Conclusion
 
-This project demonstrates the ability to:
+This project demonstrates the complete development of an end-to-end business intelligence solution using SQL Server and Power BI over the AdventureWorks2022 transactional database.
 
-* Work with complex relational datasets
-* Apply advanced SQL techniques (CTEs, window functions, OUTER APPLY)
-* Handle real-world data challenges (cost history, missing values, aggregation issues)
-* Translate raw data into actionable business insights
-* Build structured and scalable BI solutions
+The analytical workflow combines:
+
+Advanced T-SQL data modeling
+Customer behavioral segmentation
+Historical profitability analysis
+Time-series revenue analytics
+Geographic and demographic enrichment
+Interactive business intelligence dashboards
+
+The SQL layer was designed to transform transactional data into analytical datasets optimized for reporting and decision-making, while Power BI was used to create interactive dashboards focused on operational visibility and business performance evaluation.
+
+The project covers multiple analytical domains, including:
+
+Product profitability
+Sales channel performance
+B2B and B2C customer segmentation
+RFM behavioral modeling
+Pareto revenue concentration analysis
+Demographic and firmographic profiling
+Revenue trend and seasonality analysis
+
+Several advanced SQL concepts were applied throughout the implementation, including:
+
+CTE-based modular transformations
+Window functions
+Historical cost resolution
+Customer-level aggregation
+Pareto cumulative analysis
+Time-series calculations
+Data enrichment and normalization
+
+From a business perspective, the solution enables:
+
+Identification of high-value customers and products
+Detection of revenue concentration patterns
+Analysis of customer purchasing behavior
+Evaluation of geographic and demographic business performance
+Monitoring of profitability and growth trends
+Support for strategic and operational decision-making
+
+Overall, the project reflects a complete analytical pipeline that integrates data engineering, business intelligence, and data visualization practices into a unified enterprise analytics solution.
 
 ---
 
